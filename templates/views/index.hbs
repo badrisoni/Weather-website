@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/style.css"> <!--  or href="/css/style.css"  -->   
+    
+</head>
+<body>
+   <div class="main-content">
+       <!-- for sticky footer all page content here -->
+      {{>header}} 
+      <p>Use this site to get your weather</p>
+      <form>
+          <input placeholder="Enter Location"> 
+          <button>
+              Search
+          </button>
+      </form>
+      <p id="msg-1"></p>
+      <p id="msg-2"></p>
+   </div>
+   <!-- with flexbox the above div tag will take all the space except what the footer need -->
+   
+    
+    {{>footer}} 
+    <script src="/js/app.js"> </script>
+</body>
+
+</html>
