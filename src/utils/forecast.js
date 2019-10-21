@@ -1,6 +1,6 @@
 const request=require('request');
 const forecast=(latitude,longitude,callback)=>{
-const url='https://api.darksky.net/forecast/1a68ce56e1528bc3074a72d83e80a79f/'+ latitude+','+longitude +'?units=auto&exclude=minutely,hourly,flags,alerts';
+const url='https://api.darksky.net/forecast/1a68ce56e1528bc3074a72d83e80a79f/'+ latitude+','+longitude +'?units=ca&exclude=minutely,hourly,flags,alerts';
 request({url,json:true},(error,response)=>{
     if(error)
     {

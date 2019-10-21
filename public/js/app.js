@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit',(e)=>{
               else
               {
                 msg_one.textContent=data.location;
-                msg_two.textContent='The Temperature is : '+data.forecast.temperature +' degrees out there. '+data.forecast.summary;
+                msg_two.textContent='The Temperature is : '+data.forecast.temperature +' Degrees Celsius out there. '+data.forecast.summary;
               }
           })
 })
